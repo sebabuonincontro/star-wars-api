@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  swapi-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: swapi-service
+    ports:
+      - "6969:8080"
+    environment:
+      - SWAPI_BASE_URL=https://swapi.dev/api
+    restart: unless-stopped
+    networks:
+      - swapi-network
+
+networks:
+  swapi-network:
+    driver: bridge
