@@ -44,7 +44,7 @@ src/main/java/com/starwars/swapi/
 
 ```bash
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/sebabuonincontro/star-wars-api.git
 cd star-wars-api
 
 # Build
